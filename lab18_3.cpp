@@ -68,8 +68,8 @@ int main(){
 		student s; 
 		
 		//Use sscanf() to split the values in textline and assign those values to the members of struct s;
-            char name[100];
-		sscanf(textline.c_str(),"%[^,],%d,%c,%f",name,&s.id,&s.gender,&s.gpa);
+        char name[100];
+		sscanf(textline.c_str(),"%[^,],%d,%c,%lf",name, &s.id, &s.gender, &s.gpa);
 	        s.name = name;
 		allstudents.push_back(s); 		
 	}
